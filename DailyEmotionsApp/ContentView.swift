@@ -37,7 +37,7 @@ struct Home : View{
 }
 
 struct Login: View {
-    
+    //teste
     @State var color = Color.black.opacity(0.7)
     @State var  email = ""
     @State var pass = ""
@@ -62,7 +62,7 @@ struct Login: View {
                 .background(RoundedRectangle(cornerRadius: 20).stroke(self.email != "" ? Color("Color") : self.color, lineWidth: 2))
                 .padding(.top, 25)
             
-            HStack{
+            HStack(spacing: 15){
                 
                 VStack{
                     if self.visible{
@@ -76,7 +76,15 @@ struct Login: View {
                             .padding()
                             .background(RoundedRectangle(cornerRadius: 20).stroke(self.email != "" ? Color("Color") : self.color, lineWidth: 2))
                             .padding(.top, 25)
-                    }     
+                    }
+                    
+                    Button(action: {
+                        
+                    }) {
+                        Image(systemName: self.visible ? "eye.slash.fill" : "eye.fill")
+                            .foregroundColor(self.color)
+                    }
+                    
                 }
                 
                 
