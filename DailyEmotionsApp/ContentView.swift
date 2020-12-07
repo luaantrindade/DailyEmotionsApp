@@ -27,19 +27,31 @@ struct ContentView_Previews: PreviewProvider {
 struct Home : View{
     
     @State var show = false
+    @State var appeared: Double = 0.0
     
     var body: some View{
         
-        ZStack{
-            
-            NavigationLink(destination: SignUp(show: self.$show), isActive: self.$show) {
+        NavigationView{
+            ZStack{
                 
-                Text("")
+                NavigationLink(destination: SignUp(show: self.$show), isActive: self.$show) {
+                    
+                    Text("")
+                }
+                
+                Login(show: self.$show)
             }
-            .hidden()
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
             
-            Login(show: self.$show)
+            
         }
+        .opacity(appeared)
+        .animation(Animation.easeInOut(duration: 1.0), value: appeared)
+        .onAppear {self.appeared = 1.0}
+        .onDisappear {self.appeared = 0.0}
+        
         
     }
 }
@@ -146,6 +158,8 @@ struct Login: View {
                 .padding(.horizontal, 25)
             }
             Button(action: {
+                
+                self.show.toggle()
                 
             }) {
                 Text("Register")
@@ -305,7 +319,7 @@ struct SignUp: View {
                 .padding(.horizontal, 25)
             }
             Button(action: {
-                
+                self.show.toggle()
             }) {
                 Image(systemName:"chevron.left")
                     .font(.title)
@@ -313,6 +327,7 @@ struct SignUp: View {
             }
             .padding()
         }
+        .navigationBarBackButtonHidden(true)
         
         
     }
