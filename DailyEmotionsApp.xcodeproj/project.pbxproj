@@ -3,19 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8456FAE0258BDB5C00430F7E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8456FADF258BDB5C00430F7E /* GoogleService-Info.plist */; };
 		84BBE1C32579059300F29ED2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBE1C22579059300F29ED2 /* AppDelegate.swift */; };
 		84BBE1C52579059300F29ED2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBE1C42579059300F29ED2 /* SceneDelegate.swift */; };
 		84BBE1C72579059300F29ED2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBE1C62579059300F29ED2 /* ContentView.swift */; };
 		84BBE1C92579059800F29ED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BBE1C82579059800F29ED2 /* Assets.xcassets */; };
 		84BBE1CC2579059800F29ED2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BBE1CB2579059800F29ED2 /* Preview Assets.xcassets */; };
 		84BBE1CF2579059800F29ED2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BBE1CD2579059800F29ED2 /* LaunchScreen.storyboard */; };
+		BD765D0475B2576BDFADF0A8 /* Pods_DailyEmotionsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D30166BE4E83A661CAFB16 /* Pods_DailyEmotionsApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8456FADF258BDB5C00430F7E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84BBE1BF2579059300F29ED2 /* Daily Emotions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily Emotions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BBE1C22579059300F29ED2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84BBE1C42579059300F29ED2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		84BBE1CB2579059800F29ED2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		84BBE1CE2579059800F29ED2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84BBE1D02579059800F29ED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A954E89C5566D4C280980564 /* Pods-DailyEmotionsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyEmotionsApp.debug.xcconfig"; path = "Target Support Files/Pods-DailyEmotionsApp/Pods-DailyEmotionsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D5D30166BE4E83A661CAFB16 /* Pods_DailyEmotionsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyEmotionsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA06F03945E06BE17F1010AC /* Pods-DailyEmotionsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyEmotionsApp.release.xcconfig"; path = "Target Support Files/Pods-DailyEmotionsApp/Pods-DailyEmotionsApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD765D0475B2576BDFADF0A8 /* Pods_DailyEmotionsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80D39D9E2B66CF2E89482539 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5D30166BE4E83A661CAFB16 /* Pods_DailyEmotionsApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		830AA40D083AFB5114F244B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A954E89C5566D4C280980564 /* Pods-DailyEmotionsApp.debug.xcconfig */,
+				FA06F03945E06BE17F1010AC /* Pods-DailyEmotionsApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		84BBE1B62579059200F29ED2 = {
 			isa = PBXGroup;
 			children = (
 				84BBE1C12579059300F29ED2 /* DailyEmotionsApp */,
 				84BBE1C02579059300F29ED2 /* Products */,
+				830AA40D083AFB5114F244B2 /* Pods */,
+				80D39D9E2B66CF2E89482539 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +88,7 @@
 				84BBE1C82579059800F29ED2 /* Assets.xcassets */,
 				84BBE1CD2579059800F29ED2 /* LaunchScreen.storyboard */,
 				84BBE1D02579059800F29ED2 /* Info.plist */,
+				8456FADF258BDB5C00430F7E /* GoogleService-Info.plist */,
 				84BBE1CA2579059800F29ED2 /* Preview Content */,
 			);
 			path = DailyEmotionsApp;
@@ -82,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84BBE1D32579059800F29ED2 /* Build configuration list for PBXNativeTarget "DailyEmotionsApp" */;
 			buildPhases = (
+				6476892EC24003F72D31DB8F /* [CP] Check Pods Manifest.lock */,
 				84BBE1BB2579059300F29ED2 /* Sources */,
 				84BBE1BC2579059300F29ED2 /* Frameworks */,
 				84BBE1BD2579059300F29ED2 /* Resources */,
+				50C2360EB2C39DDE008AA835 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,12 +163,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				84BBE1CF2579059800F29ED2 /* LaunchScreen.storyboard in Resources */,
+				8456FAE0258BDB5C00430F7E /* GoogleService-Info.plist in Resources */,
 				84BBE1CC2579059800F29ED2 /* Preview Assets.xcassets in Resources */,
 				84BBE1C92579059800F29ED2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50C2360EB2C39DDE008AA835 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DailyEmotionsApp/Pods-DailyEmotionsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DailyEmotionsApp/Pods-DailyEmotionsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DailyEmotionsApp/Pods-DailyEmotionsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6476892EC24003F72D31DB8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DailyEmotionsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84BBE1BB2579059300F29ED2 /* Sources */ = {
@@ -282,6 +354,7 @@
 		};
 		84BBE1D42579059800F29ED2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A954E89C5566D4C280980564 /* Pods-DailyEmotionsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -293,7 +366,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jeff.DailyEmotionsApp;
+				PRODUCT_BUNDLE_IDENTIFIER = jeff.DailyEmotions;
 				PRODUCT_NAME = "Daily Emotions";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,6 +375,7 @@
 		};
 		84BBE1D52579059800F29ED2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA06F03945E06BE17F1010AC /* Pods-DailyEmotionsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -313,7 +387,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jeff.DailyEmotionsApp;
+				PRODUCT_BUNDLE_IDENTIFIER = jeff.DailyEmotions;
 				PRODUCT_NAME = "Daily Emotions";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
